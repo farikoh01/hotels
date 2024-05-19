@@ -1,0 +1,35 @@
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets/img/welcome/welcome.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+  }
+  
+  .welcome-screen h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .welcome-screen p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .welcome-screen button {
+    padding: 0.5em 2em;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .welcome-screen button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
