@@ -1,0 +1,78 @@
+.home-screen {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .nav-bar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .option-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .form-input {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recommended-section {
+    text-align: left;
+    margin: 20px;
+  }
+  
+  .beach-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }

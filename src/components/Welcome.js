@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/Welcome.css";
+import "../css/welcome.css";
+import "./homescreen";
 
 const Welcome = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate('/next-page'); // Ganti '/next-page' dengan path yang sesuai
+    navigate('/homescreen'); // Ganti '/next-page' dengan path yang sesuai
   };
 
   return (

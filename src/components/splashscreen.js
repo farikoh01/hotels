@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/SplashScreen.css";
+import "../css/splashscreen.css";
 
 const SplashScreen = () => {
   const [loadingDone, setLoadingDone] = useState(false);
