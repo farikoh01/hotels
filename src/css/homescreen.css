@@ -1,6 +1,10 @@
 .home-screen {
     font-family: Arial, sans-serif;
+    background-image: url('../assets/img/homescreen/Pandawa-bg.png'); /* Sesuaikan dengan path yang benar */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
   }
+  
   
   .header {
     display: flex;
@@ -76,3 +80,4 @@
     height: auto;
     margin-top: 20px;
   }
+  
