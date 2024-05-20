@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/splashscreen.css";
+import "../css/SplashScreen.css";
 
 const SplashScreen = () => {
   const [loadingDone, setLoadingDone] = useState(false);
@@ -21,6 +21,7 @@ const SplashScreen = () => {
           <div className="loading-bar">
             <div className="loading-progress"></div>
           </div>
+          <p>Loading...</p> {/* Tambahkan teks untuk memastikan elemen muncul */}
         </div>
       )}
     </div>

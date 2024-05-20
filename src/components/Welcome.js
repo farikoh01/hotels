@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../css/welcome.css";
+import "../css/Welcome.css";
 import "./homescreen";
 
 const Welcome = () => {
