@@ -65,7 +65,6 @@ button:hover {
   margin-right: -100px; /* Mengurangi jarak ke elemen berikutnya */
 }
 
-/* Media queries untuk responsivitas */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
