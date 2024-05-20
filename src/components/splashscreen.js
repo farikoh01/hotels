@@ -21,7 +21,6 @@ const SplashScreen = () => {
           <div className="loading-bar">
             <div className="loading-progress"></div>
           </div>
-          <p>Loading...</p> {/* Tambahkan teks untuk memastikan elemen muncul */}
         </div>
       )}
     </div>
@@ -29,4 +28,3 @@ const SplashScreen = () => {
 };
 
 export default SplashScreen;
-
