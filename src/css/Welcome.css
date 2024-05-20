@@ -1,35 +1,99 @@
 .welcome-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url('../assets/img/welcome/welcome.png') no-repeat center center;
-    background-size: cover;
-    text-align: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Mengisi seluruh tinggi viewport */
+  width: 100vw; /* Mengisi seluruh lebar viewport */
+  background: url('../assets/img/welcome/welcome.png') no-repeat center center fixed;
+  background-size: cover; /* Menutupi seluruh area elemen */
+  text-align: center;
+  color: white;
+  padding: 0; /* Menghilangkan padding */
+  border: none; /* Menghilangkan border */
+  margin: 0; /* Menghilangkan margin */
+  font-family: 'Gill Sans MT', sans-serif;
+  font-weight: normal; /* Menetapkan font style regular */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ini membantu mengelola layout lebih prediktif */
+}
+
+h1 {
+  font-size: 63px;
+  margin-bottom: 10px; /* Mengurangi margin bawah */
+  color: black;
+  letter-spacing: -1px; /* Mengurangi jarak antar karakter */
+}
+
+p {
+  font-size: 30px;
+  margin-top: 6px; /* Menghilangkan margin atas */
+  font-family: 'Hanuman', serif; /* Menggunakan font Hanuman */
+  color: black;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black; /* Warna teks */
+  background-color: rgba(0, 0, 0, 0); /* Background transparan */
+  border: 2px solid black; /* Garis border putih dengan ketebalan 2px */
+  border-radius: 20px; /* Membulatkan sudut */
+  cursor: pointer; /* Tampilan cursor sebagai pointer */
+  width: 200px;
+  height: 50px;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0); /* Hitam dengan transparansi 70% saat di-hover */
+  color: white;
+}
+
+.circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  padding: 5px 30px; /* Tambahkan padding horizontal untuk membuat lingkaran lebih besar */
+  display: inline-block;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-weight: normal; /* Menetapkan font style regular */
+  margin-right: -100px; /* Mengurangi jarak ke elemen berikutnya */
+}
+
+/* Media queries untuk responsivitas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  
-  .welcome-screen h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
+
+  p {
+    font-size: 1rem;
   }
-  
-  .welcome-screen p {
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  
-  .welcome-screen button {
-    padding: 0.5em 2em;
-    font-size: 1em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  .welcome-screen button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+
+  p {
+    font-size: 0.9rem;
   }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    width: 120px;
+    height: 35px;
+  }
+}
