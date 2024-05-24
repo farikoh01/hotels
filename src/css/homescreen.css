@@ -3,6 +3,7 @@
     background-image: url('../assets/img/homescreen/Pandawa-bg.png'); /* Sesuaikan dengan path yang benar */
     background-size: cover; /* Menutupi seluruh area */
     background-position: center; /* Pusatkan gambar */
+    color: #fff;
   }
   
   
@@ -11,20 +12,51 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8;
+    background-color: #007bff; /* Warna biru */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
   }
   
   .search-bar {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .nav-bar {
+    display: flex;
+    list-style: none;
   }
   
   .nav-bar a {
-    margin: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-bar a:hover {
+    background-color: #0056b3;
   }
   
   .main-content {
@@ -73,11 +105,20 @@
   .recommended-section {
     text-align: left;
     margin: 20px;
+    color: #333; /* Warna teks untuk bagian rekomendasi */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .recommended-section h2,
+  .recommended-section h3 {
+    color: #000; /* Warna teks untuk judul */
   }
   
   .beach-image {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
   }
-  
