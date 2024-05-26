@@ -1,3 +1,4 @@
+/* CSS untuk Welcome Screen */
 .welcome-screen {
   display: flex;
   flex-direction: column;
@@ -12,23 +13,32 @@
   padding: 0; /* Menghilangkan padding */
   border: none; /* Menghilangkan border */
   margin: 0; /* Menghilangkan margin */
-  font-family: 'Gill Sans MT', sans-serif;
-  font-weight: normal; /* Menetapkan font style regular */
+  font-family: 'Gill Sans MT', sans-serif; /* Menetapkan font style untuk seluruh layar */
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ini membantu mengelola layout lebih prediktif */
-}
-
-h1 {
-  font-size: 63px;
+/* CSS untuk Judul */
+.welcome-h1 {
+  font-size: 50px;
   margin-bottom: 10px; /* Mengurangi margin bawah */
   color: black;
   letter-spacing: -1px; /* Mengurangi jarak antar karakter */
+  font-family:  'Gill Sans MT', sans-serif;
+  font-weight: normal; /* Menerapkan gaya font normal */
 }
 
+/* CSS untuk Lingkaran */
+.circle {
+  background-color: black;
+  color: white;
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  padding: 5px 30px; /* Tambahkan padding horizontal untuk membuat lingkaran lebih besar */
+  display: inline-block;
+  font-family: 'Gill Sans MT', sans-serif; /* Menetapkan font style untuk lingkaran */
+  font-weight: normal; /* Menetapkan font style regular */
+  margin-left: 10px; /* Menambahkan jarak ke elemen sebelumnya */
+}
+
+/* CSS untuk Paragraf */
 p {
   font-size: 30px;
   margin-top: 6px; /* Menghilangkan margin atas */
@@ -36,6 +46,7 @@ p {
   color: black;
 }
 
+/* CSS untuk Tombol */
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -49,22 +60,13 @@ button {
   height: 50px;
 }
 
+/* CSS untuk Hover Tombol */
 button:hover {
   background-color: rgb(0, 0, 0); /* Hitam dengan transparansi 70% saat di-hover */
   color: white;
 }
 
-.circle {
-  background-color: black;
-  color: white;
-  border-radius: 50%; /* Membuat bentuk lingkaran */
-  padding: 5px 30px; /* Tambahkan padding horizontal untuk membuat lingkaran lebih besar */
-  display: inline-block;
-  font-family: 'Gill Sans MT', sans-serif;
-  font-weight: normal; /* Menetapkan font style regular */
-  margin-right: -100px; /* Mengurangi jarak ke elemen berikutnya */
-}
-
+/* CSS untuk Responsif pada Layar Lebar */
 @media (max-width: 768px) {
   .welcome-screen {
     font-size: 90%; /* Mengurangi ukuran font secara umum */
@@ -85,22 +87,23 @@ button:hover {
   }
 }
 
+/* CSS untuk Responsif pada Layar Kecil */
 @media (max-width: 480px) {
   .welcome-screen {
-    font-size: 80%; /* Lebih kecil lagi untuk layar yang sangat kecil */
+    font-size: 80%; /* Lebih kecil lagi untuk layar */
   }
 
   h1 {
-    font-size: 36px; /* Lebih kecil lagi untuk h1 */
+    font-size: 36px; /* Mengurangi ukuran font untuk h1 */
   }
 
   p {
-    font-size: 18px; /* Lebih kecil lagi untuk paragraf */
+    font-size: 20px; /* Mengurangi ukuran font untuk paragraf */
   }
 
   button {
-    width: 120px; /* Lebih kecil lagi untuk tombol */
-    height: 35px; /* Lebih kecil lagi untuk tinggi tombol */
-    font-size: 0.7rem; /* Lebih kecil lagi untuk font tombol */
+    width: 120px; /* Mengurangi lebar tombol */
+    height: 35px; /* Mengurangi tinggi tombol */
+    font-size: 0.7rem; /* Mengurangi ukuran font pada tombol */
   }
 }

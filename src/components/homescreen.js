@@ -1,53 +1,78 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Pastikan Bootstrap CSS diimpor
 import React from 'react';
+import '../css/homescreen.css'; // Pastikan ini mengarah ke file CSS yang benar
 
 const HomeScreen = () => {
   return (
-    <div className="home-screen bg-dark text-white" style={{ backgroundImage: "url('../assets/img/homescreen/Pandawa-bg.png')" }}>
-      <header className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src="../assets/img/logo.png" alt="Logo" height="40" className="d-inline-block align-text-top me-2" />
-            DESTINA6
-          </a>
-          <div className="collapse navbar-collapse">
-            <input type="text" placeholder="Search your destination" className="form-control me-2" />
-            <nav className="navbar-nav ms-auto">
-              <a className="nav-link active" href="/">Home</a>
-              <a className="nav-link" href="/about">About us</a>
-              <a className="nav-link" href="/contact">Contact</a>
-              <a className="nav-link" href="/signin">Sign in</a>
-            </nav>
-          </div>
+    <div className="home-screen">
+      <header className="header">
+        <div className="logo">
+          <span>DESTINA<span>6</span></span>
         </div>
+        <nav className="nav-bar">
+          <a href="/">Home</a>
+          <a href="/faq">FAQ</a>
+          <a href="/contact">Contact</a>
+          <a href="/signin">Sign in</a>
+        </nav>
       </header>
       <main className="container text-center mt-4">
-        <h1>START YOUR TRIP with TRAVEL6</h1>
-        <div className="btn-group mt-3 mb-4" role="group">
-          <button type="button" className="btn btn-secondary">Destinations</button>
-          <button type="button" className="btn btn-secondary">Hotels</button>
-          <button type="button" className="btn btn-secondary">Flight</button>
-          <button type="button" className="btn btn-secondary">Bus</button>
+        <h1 className='StartNew'>START YOUR TRIP with TRAVEL<span>6</span></h1>
+        <div className="tab-navigation">
+          <a href="/destinations" >Destinations</a>
+          <a href="/hotels">Hotels</a>
+          <a href="/flights">Flight</a>
+          <a href="/bus">Bus</a>
         </div>
-        <div className="d-flex justify-content-center mb-4">
+        <div className="search-form">
           <input type="text" placeholder="Destination" className="form-control me-2" />
           <input type="date" className="form-control me-2" />
           <input type="date" className="form-control me-2" />
           <input type="text" placeholder="1 room, 2 adults, 0 children" className="form-control me-2" />
           <button className="btn btn-dark">SEARCH</button>
         </div>
-        <section className="text-start bg-light p-4 rounded-3" style={{ color: '#333' }}>
-          <h2>RECOMMENDED</h2>
-          <p>Popular Beach in Indonesia</p>
-          <h3>PANDAWA BEACH</h3>
-          <p>
-            Pandawa Beach is one of the popular natural tourist destinations located in Bali Province. 
-            This beach has a panoramic view that spoils the eyes plus a calm and comfortable atmosphere 
-            like the Gods. The name of the beach located in Kutuh Village, South Kuta District, Badung 
-            Regency is taken from the five Mahabharata brothers consisting of Yudistira, Bima, Arjuna, 
-            Nakula, and Sadewa.
-          </p>
-          <img src="../assets/img/homescreen/pandawa-beach.jpg" alt="Pandawa Beach" className="img-fluid rounded-3" />
+        <section className="recommended-section">
+          <div className="text-content">
+            <h2>RECOMMENDED</h2>
+            <p className='judul'>Popular Beach in Indonesia</p>
+            <h3>PANDAWA BEACH</h3>
+            <p className='paragraf'>
+              Pandawa Beach is one of the popular natural tourist destinations located in Bali Province. 
+              This beach has a panoramic view that spoils the eyes plus a calm and comfortable atmosphere 
+              like the Gods. The name of the beach located in Kutuh Village, South Kuta District, Badung 
+              Regency is taken from the five Mahabharata brothers consisting of Yudistira, Bima, Arjuna, 
+              Nakula, and Sadewa.
+            </p>
+          </div>
+          <div className="image-content">
+            <img src="/src/assets/img/homescreen/pandawa-beach.jpg" alt="Pandawa Beach" className="img-fluid rounded-3" />
+          </div>
+        </section>
+
+        <section className="services-section">
+          <h2>We Offer Best Services</h2>
+          <div className="services-container">
+            <div className="service-box">
+              <img src="/path/to/icon1.png" alt="Tailored itineraries" />
+              <h3>Tailored itineraries</h3>
+              <p>Crafted to your preferences, our custom itineraries ensure every journey aligns with your unique travel style.</p>
+            </div>
+            <div className="service-box">
+              <img src="/path/to/icon2.png" alt="Expert Guides" />
+              <h3>Expert Guides</h3>
+              <p>Our experienced guides lead you through immersive experiences, revealing the hidden gems and local secrets of each destination.</p>
+            </div>
+            <div className="service-box">
+              <img src="/path/to/icon3.png" alt="Exclusive Experiences" />
+              <h3>Exclusive Experiences</h3>
+              <p>Access exclusive events, private tours, and VIP treatment, creating unforgettable memories tailored just for you.</p>
+            </div>
+            <div className="service-box">
+              <img src="/path/to/icon4.png" alt="Seamless Travel Planning" />
+              <h3>Seamless Travel Planning</h3>
+              <p>From booking flights to arranging accommodations and activities, we handle every detail so you can relax and enjoy the journey stress-free.</p>
+            </div>
+          </div>
         </section>
       </main>
     </div>

@@ -12,7 +12,7 @@ const Welcome = () => {
 
   return (
     <div className="welcome-screen">
-      <h1>WELCOME TO DESTINA <span className="circle">6</span></h1>
+      <h1 className="welcome-h1">WELCOME TO DESTINA <span className="circle">6</span></h1>
       <p>Enjoy your holidays to an interesting place</p>
       <button onClick={handleGetStarted}>GET STARTED</button>
     </div>
