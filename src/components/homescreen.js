@@ -45,7 +45,7 @@ const HomeScreen = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src="/src/assets/img/homescreen/pandawa-beach.jpg" alt="Pandawa Beach" className="img-fluid rounded-3" />
+            <img src="/src/assets/img/homescreen/pandawa-beach.png" alt="Pandawa Beach" className="img-fluid rounded-3" />
           </div>
         </section>
 
