@@ -167,7 +167,7 @@
   align-items: center; /* Menengahkan konten secara vertikal */
   margin-top: 40px;
   text-align: left;
-  background: linear-gradient(to right, rgba(0, 24, 85, 0.5) 0%, rgba(0, 71, 255, 0.5) 100%);
+  background: linear-gradient(to right, rgba(0, 24, 85, 0.7) 0%, rgba(0, 71, 255, 0.7) 100%); /* Meningkatkan transparansi */
   padding: 20px;
   width: 100vw;
   position: relative;
@@ -176,6 +176,10 @@
   transform: translateX(-50%);
   font-size: 38px;
   font-weight: normal;
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar dan tinggi */
+  z-index: 3; /* Menyesuaikan z-index agar lebih tinggi dari bordered-div dan elemen lain */
+  border-radius: 0 0 12px 12px; /* Menambahkan radius hanya di sudut bawah kiri dan kanan */
+  border: 2px solid white;
 }
 
 .recommended-section .text-content {
@@ -223,6 +227,7 @@
 .recommended-section .image-content {
   flex: 0 0 300px; /* Mengatur lebar gambar */
   margin-left: 20px; /* Memberikan jarak antara gambar dan teks */
+  border: 5px solid white; /* Menambahkan bingkai putih */
 }
 
 .recommended-section .image-content img {
@@ -231,10 +236,37 @@
   border-radius: 10px;
 }
 
+
+/* ===========================
+   button Section Styles
+   =========================== */
+
+
+.bordered-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Menambahkan padding */
+  background: linear-gradient(to right, #5C8FF3, #0057FF); /* Warna gradasi biru */
+  border-radius: 0; /* Menghilangkan radius di bagian atas */
+  border-bottom-left-radius: 12px; /* Radius sudut bawah kiri */
+  border-bottom-right-radius: 12px; /* Radius sudut bawah kanan */
+  min-height: 100px; /* Menambahkan tinggi minimum */
+  width: 100vw; /* Mengatur lebar menjadi full viewport width */
+  position: relative; /* Memastikan elemen tetap dalam aliran dokumen */
+  left: 50%; /* Mengatur posisi kiri */
+  transform: translateX(-50%); /* Memusatkan elemen secara horizontal */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar dan tinggi */
+  margin: 0; /* Menghilangkan margin */
+  z-index: 1; /* Menambahkan z-index untuk memastikan elemen di bawah */
+  margin-top: -4px;
+}
+
 /* ===========================
    Services Section Styles
    =========================== */
 .services-section {
+  margin-top: 30px;
   text-align: center;
   padding: 40px 20px;
   background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Pastikan Bootstrap CSS diimpor
 import React from 'react';
+import pandawaBeach from '../assets/img/homescreen/pandawa-beach.png';
 import '../css/homescreen.css'; // Pastikan ini mengarah ke file CSS yang benar
 
 const HomeScreen = () => {
@@ -45,7 +46,16 @@ const HomeScreen = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src="/src/assets/img/homescreen/pandawa-beach.png" alt="Pandawa Beach" className="img-fluid rounded-3" />
+            <img src={pandawaBeach} alt="Pandawa Beach" className="img-fluid rounded-3" />
+          </div>
+        </section>
+
+        <section className='button-expore'>
+          <div className="bordered-div">
+            <button>Explore</button>
+            <div className="slider">
+               Konten slider
+            </div>
           </div>
         </section>
 
