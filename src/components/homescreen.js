@@ -54,7 +54,11 @@ const HomeScreen = () => {
           <div className="bordered-div">
             <button>Explore</button>
             <div className="slider">
-               Konten slider
+               <ul>
+                 <li className="active">1</li>
+                 <li>2</li>
+                 <li>3</li>
+               </ul>
             </div>
           </div>
         </section>

@@ -179,7 +179,7 @@
   box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar dan tinggi */
   z-index: 3; /* Menyesuaikan z-index agar lebih tinggi dari bordered-div dan elemen lain */
   border-radius: 0 0 12px 12px; /* Menambahkan radius hanya di sudut bawah kiri dan kanan */
-  border: 2px solid white;
+  border: 2px solid #012480;
 }
 
 .recommended-section .text-content {
@@ -249,8 +249,8 @@
   padding: 20px; /* Menambahkan padding */
   background: linear-gradient(to right, #5C8FF3, #0057FF); /* Warna gradasi biru */
   border-radius: 0; /* Menghilangkan radius di bagian atas */
-  border-bottom-left-radius: 12px; /* Radius sudut bawah kiri */
-  border-bottom-right-radius: 12px; /* Radius sudut bawah kanan */
+  border-bottom-left-radius: 30px; /* Radius sudut bawah kiri */
+  border-bottom-right-radius: 30px; /* Radius sudut bawah kanan */
   min-height: 100px; /* Menambahkan tinggi minimum */
   width: 100vw; /* Mengatur lebar menjadi full viewport width */
   position: relative; /* Memastikan elemen tetap dalam aliran dokumen */
@@ -259,8 +259,74 @@
   box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar dan tinggi */
   margin: 0; /* Menghilangkan margin */
   z-index: 1; /* Menambahkan z-index untuk memastikan elemen di bawah */
-  margin-top: -4px;
+  margin-top: 0;
 }
+.bordered-div button{
+  color: white;
+  margin-left: 80px;
+  position: relative;
+  top: -10px; /* Menggerakkan tombol ke atas */
+  transition: color 0.3s; /* Menambahkan transisi untuk efek hover */
+}
+
+.bordered-div button:hover {
+  color: #ccc; /* Mengubah warna saat hover, contoh dengan warna abu-abu */
+}
+
+.slider {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: center; /* Menengahkan item secara horizontal */
+  align-items: center; /* Menengahkan item secara vertikal */
+  margin-top: 20px; /* Memberikan margin atas */
+  position: relative; /* Mengatur posisi relatif terhadap kontainer */
+}
+
+.slider::before {
+  content: ''; /* Konten kosong untuk pseudo-element */
+  position: absolute; /* Posisi absolut terhadap elemen induk */
+  top: 50%; /* Posisi dari atas setengah dari tinggi induk */
+  left: -40%; /* Posisi dari kiri, lebih panjang */
+  right: -60%; /* Posisi dari kanan, lebih panjang */
+  height: 1px; /* Tinggi garis */
+  background-color: #fff; /* Warna garis abu-abu */
+  z-index: 0; /* Z-index untuk layering */
+}
+
+.slider ul {
+  list-style: none; /* Menghilangkan style list */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  padding: 0; /* Menghilangkan padding */
+  position: relative; /* Mengatur posisi relatif terhadap kontainer */
+  z-index: 1; /* Z-index untuk layering di atas ::before */
+}
+
+.slider ul li {
+  width: 40px; /* Lebar item */
+  height: 40px; /* Tinggi item */
+  background-color: #0057FF; /* Warna latar belakang putih */
+  border: 1px solid #fff; /* Bingkai dengan warna biru */
+  border-radius: 50%; /* Membuat bentuk bulat */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: center; /* Menengahkan konten secara horizontal */
+  align-items: center; /* Menengahkan konten secara vertikal */
+  margin: 0 50px; /* Margin horizontal */
+  cursor: pointer; /* Mengubah kursor menjadi pointer */
+  transition: background-color 0.3s, color 0.3s; /* Transisi untuk warna latar dan warna teks */
+}
+
+.slider ul li.active {
+  background-color: #fff; /* Warna latar belakang biru untuk item aktif */
+  color: #0057FF; /* Warna teks putih untuk item aktif */
+}
+
+.slider ul li:hover {
+  background-color: #fff; /* Warna latar belakang biru saat hover */
+  color: #0057FF; /* Warna teks putih saat hover */
+}
+
+
+
+
 
 /* ===========================
    Services Section Styles
@@ -269,7 +335,6 @@
   margin-top: 30px;
   text-align: center;
   padding: 40px 20px;
-  background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
   color: #fff;
 }
 
@@ -286,7 +351,7 @@
 }
 
 .service-box {
-  background: rgba(255, 255, 255, 0.8); /* Latar belakang putih dengan transparansi */
+  background: #BAD6FF; /* Latar belakang putih dengan transparansi */
   color: #333;
   padding: 20px;
   margin: 10px;
