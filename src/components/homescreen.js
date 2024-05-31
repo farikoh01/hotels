@@ -1,9 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Pastikan Bootstrap CSS diimpor
-import React from 'react';
+import React, { useEffect } from 'react';
 import pandawaBeach from '../assets/img/homescreen/pandawa-beach.png';
 import '../css/homescreen.css'; // Pastikan ini mengarah ke file CSS yang benar
 
 const HomeScreen = () => {
+  useEffect(() => {
+    const backgrounds = ['background1', 'background2', 'background3', 'background4', 'background5'];
+    let currentBackgroundIndex = 0;
+    const homeScreenElement = document.querySelector('.home-screen');
+
+    const intervalId = setInterval(() => {
+      // Hapus semua class background sebelumnya
+      homeScreenElement.classList.remove(...backgrounds);
+      // Tambahkan class background baru
+      homeScreenElement.classList.add(backgrounds[currentBackgroundIndex]);
+      // Perbarui indeks untuk background selanjutnya
+      currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+    }, 10000); // ganti background setiap 10 detik
+
+    // Membersihkan interval saat komponen unmount
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="home-screen">
       <header className="header">

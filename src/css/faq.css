@@ -4,9 +4,28 @@
 
    .faq {
     font-family: Arial, sans-serif;
-    background-image: url('/src/assets/img/homescreen/Pandawa-bg.png'); /* Sesuaikan dengan path yang benar */
     background-size: cover; /* Menutupi seluruh area */
     background-position: center; /* Pusatkan gambar */
+  }
+  
+  .background1 {
+    background-image: url('/src/assets/img/bg1.png');
+  }
+
+  .background2 {
+    background-image: url('/src/assets/img/bg2.png');
+  }
+
+  .background3 {
+    background-image: url('/src/assets/img/bg3.png');
+  }
+
+  .background4 {
+    background-image: url('/src/assets/img/bg4.png');
+  }
+
+  .background5 {
+    background-image: url('/src/assets/img/bg5.png');
   }
   
   /* ===========================

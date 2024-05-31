@@ -2,14 +2,32 @@
    Home Screen Styles
    =========================== */
 
-.home-screen {
-  font-family: Arial, sans-serif;
-  background-image: url('/src/assets/img/homescreen/Pandawa-bg.png'); /* Sesuaikan dengan path yang benar */
-  background-size: cover; /* Menutupi seluruh area */
-  background-position: center; /* Pusatkan gambar */
-  color: #fff;
-}
-
+   .home-screen {
+    font-family: Arial, sans-serif;
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    color: #fff;
+  }
+  
+  .background1 {
+    background-image: url('../assets/img/bg1.png');
+  }
+  
+  .background2 {
+    background-image: url('../assets/img/bg2.png');
+  }
+  
+  .background3 {
+    background-image: url('../assets/img/bg3.png');
+  }
+  
+  .background4 {
+    background-image: url('../assets/img/bg4.png');
+  }
+  
+  .background5 {
+    background-image: url('../assets/img/bg5.png');
+  }
 /* ===========================
    Header Styles
    =========================== */
