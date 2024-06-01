@@ -13,6 +13,7 @@ function App() {
       <Route path="/welcome" element={<Welcome />} />
       <Route path="/homescreen" element={<HomeScreen />} />
       <Route path="/faq" element={<Faq />} />
+      <Route path="/hotels" element={<Hotels />} />
       {/* Tambahkan route lain sesuai kebutuhan */}
     </Routes>
   );
